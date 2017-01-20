@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Game of guessing a secret number.
  * @author Pappim Pipatkasrira
- *
+ * @version 2017.01.20
  */
 
 public class GuessingGame {
