@@ -5,6 +5,7 @@ import java.util.Scanner;
 /**
  * Plays game using input from a user.
  * @author Pappim Pipatkasrira
+ * @version 2017.01.20
  */
 
 public class GameConsole {
