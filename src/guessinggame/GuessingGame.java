@@ -37,7 +37,13 @@ public class GuessingGame {
 	}
 	
 	/**
+<<<<<<< HEAD:src/guessinggame/GuessingGame.java
 	 * @return count of the game
+=======
+	 * Initialize new game.
+	 * Initialize secret and hint
+	 * @param upperBound Upperbound that user inputs.
+>>>>>>> a8631cee1c8cd433676325e964a87a7136fbde78:src/number_guessing/GuessingGame.java
 	 */
 	public int getCount(){
 		return count;

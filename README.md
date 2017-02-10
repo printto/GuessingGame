@@ -1,4 +1,5 @@
-by Pappim Pipatkasrira
+##Guessing Game
+###by Pappim Pipatkasrira
 
 This is the Number Guessing Game.
 The game will random one number and you'll need to guess it.
