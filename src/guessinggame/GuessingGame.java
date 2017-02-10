@@ -1,4 +1,4 @@
-package number_guessing;
+package guessinggame;
 
 import java.util.Random;
 
@@ -19,24 +19,9 @@ public class GuessingGame {
 	String hint = "I'm thinking of a number between 1 and XX\n";
 	
 	/**
-	 * Get variables
-	 */
-	public int getSecret(){
-		return secret;
-	}
-	
-	public int getUpperbound(){
-		return upperBound;
-	}
-	
-	public int getCount(){
-		return count;
-	}
-
-	/**
 	 * Initialize new game.
 	 * Initialize secret and hint
-	 * @param upperBound - upperbound that user input
+	 * @param upperBound Upperbound that user inputs.
 	 */
 	public GuessingGame(int upperBound) {
 		this.upperBound = upperBound;
@@ -45,9 +30,23 @@ public class GuessingGame {
 	}
 	
 	/**
+	 * @return Upper bound of the secret
+	 */
+	public int getUpperbound(){
+		return upperBound;
+	}
+	
+	/**
+	 * @return count of the game
+	 */
+	public int getCount(){
+		return count;
+	}
+	
+	/**
 	 * Input guess number and calculate boolean
-	 * @param number - The answer that user input
-	 * @return guess - return as a results in boolean
+	 * @param number The answer that user inputs.
+	 * @return guess Return a results in boolean.
 	 */
 	public boolean guess (int number){
 		count++;
@@ -63,9 +62,9 @@ public class GuessingGame {
 	
 	/**
 	 * Set hint to too small or too big
-	 * @param number - number that user input, revieved from "guess" method
+	 * @param number Number that user input, revieved from "guess" method.
 	 */
-	public void setHint (int number){
+	private void setHint (int number){
 		if(secret > number){
 			hint = "Sorry, your guess is too small.\n";
 		}
@@ -76,7 +75,7 @@ public class GuessingGame {
 	
 	/**
 	 * for retuning hint as a String
-	 * @return hint as a String
+	 * @return hint returned as a String
 	 */
 	public String getHint(){
 		return hint;
@@ -84,7 +83,7 @@ public class GuessingGame {
 
 	/**
 	 * Generate random number
-	 * @param limit - upperbound
+	 * @param limit Upperbound
 	 * @return randomNumber
 	 */
 	private int getRandomNumber(int limit){

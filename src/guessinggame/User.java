@@ -1,4 +1,10 @@
-package number_guessing;
+package guessinggame;
+
+/**
+ * Main class of Guessing Game.
+ * @author Pappim Pipatkasrira
+ * @version 2017.01.20
+ */
 
 public class User {
 	

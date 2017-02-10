@@ -1,10 +1,11 @@
-package number_guessing;
+package guessinggame;
 
 import java.util.Scanner;
 
 /**
  * Plays game using input from a user.
  * @author Pappim Pipatkasrira
+ * @version 2017.01.20
  */
 
 public class GameConsole {
@@ -17,13 +18,14 @@ public class GameConsole {
 	 */
 	public int play (GuessingGame game){		
 		boolean checkGuess = true;
+		int answer;
 		do{
 			System.out.print(game.getHint() + "What is your guess? ");
-			int answer = input.nextInt();
+			answer = input.nextInt();
 			checkGuess = game.guess(answer);
 		}while(!checkGuess);
 		System.out.print(game.getHint());
-		return game.getSecret();
+		return answer;
 	}
 
 }
